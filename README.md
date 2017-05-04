@@ -18,7 +18,8 @@ git clone https://github.com/kierglover/webflow-build-system.git
 ```
 You should then have the `package.json` and the `Gruntfile.js` in your chosen directory.
 ### Running the System
-To make sure all the npm dependencies are installed, run the following in your projects root directory (`.documents/mywebsite/` for example).
+To make sure all the npm dependencies are installed, run the following in your projects root directory (`.
+/documents/mywebsite/` for example).
 ```
 npm install
 ```
