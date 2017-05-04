@@ -16,7 +16,7 @@ then `cd` into a chosen directory and run
 ```
 git clone https://github.com/kierglover/webflow-build-system.git
 ```
-You should then have the `package.jason` and the `Gruntfile.js` in your chosen directory.
+You should then have the `package.json` and the `Gruntfile.js` in your chosen directory.
 ### Running the System
 To make sure all the npm dependencies are installed, run the following in your projects root directory (`.documents/mywebsite/` for example).
 ```
@@ -50,4 +50,4 @@ Make a small change or addition in your stylesheet and Grunt will watch for chan
 ###Final Notes
 When you deploy the site you do not need to upload the Gruntfile,  package.json file or node_modules directory.
 
-If you are using an exact clone of this repo make sure update your `index.html` and any other pages to `build/css/main.min.css` and remove all other styles. Do the same with the javascript file links. Change to `build/js/scripts.min.js`. Also, rename the default exported custom css file to `main.css`. 
+If you are using an exact clone of this repo make sure update your `index.html` and any other pages to `build/css/main.min.css` and remove all other styles. Do the same with the javascript file links. Change to `build/js/scripts.min.js`. Also, rename the default exported custom css file to `main.css`.
