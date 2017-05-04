@@ -26,7 +26,7 @@ Then test by running the default Grunt task which has been set up to run a custo
 ```
 grunt
 ```
-###Finishing Touches
+### Finishing Touches
 Now you can go ahead and export your Webflow site, unzip it and copy the contents to the directory in which you cloned this Build System. Add the following empty folders
 ```
 mkdir build
@@ -47,7 +47,8 @@ Then you can run the default grunt command
 grunt
 ```
 Make a small change or addition in your stylesheet and Grunt will watch for changes and run the pre-prepared tasks.
-###Final Notes
+
+### Final Notes
 When you deploy the site you do not need to upload the Gruntfile,  package.json file or node_modules directory.
 
 If you are using an exact clone of this repo make sure update your `index.html` and any other pages to `build/css/main.min.css` and remove all other styles. Do the same with the javascript file links. Change to `build/js/scripts.min.js`. Also, rename the default exported custom css file to `main.css`.
