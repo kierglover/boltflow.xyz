@@ -1,0 +1,29 @@
+{
+  "name": "webflow build system",
+  "version": "1.0.0",
+  "description": "A simple Grunt build system to optimise sites exported with Webflow.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+   "type": "git",
+   "url": "git+https://github.com/kierglover/webflow-build-system.git"
+  },
+  "author": "Kieran Glover",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kierglover/webflow-build-system/issues"
+  },
+  "homepage": "https://github.com/kierglover/webflow-build-system.git",
+  "dependencies": {
+    "grunt": "^1.0.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.1.0",
+    "grunt-contrib-uglify": "^2.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-php": "^1.5.1"
+  }
+}
