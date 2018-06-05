@@ -26,7 +26,7 @@ npm install
 Then test by running the default Grunt task which has been set up to run a custom Watch task
 ```
 grunt
-```
+
 ### Finishing Touches
 Now you can go ahead and export your Webflow site, unzip it and copy the contents to the directory in which you cloned this Build System. Add the following empty folders
 ```
@@ -37,6 +37,7 @@ then change directory
 cd build
 ```
 mkdir css js
+```
 ```
 then change back to the root directory of your project.
 ```
