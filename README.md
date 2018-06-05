@@ -1,5 +1,5 @@
-# Webflow Build System
-A simple Grunt build system to optimise sites exported with Webflow.
+# Webflow Build System 💨 🖥
+A simple Grunt build system to speed up websites you exported with [Webflow](https://webflow.com?rfsn=881395.47d94f).
 ## Getting Started
 This a simple, but scalable build system template that is easy to use especially if you've ever used Grunt before. Even if you have't, hopefully through these instructions you can utilise the system.
 ### Prerequisites
@@ -36,7 +36,6 @@ then change directory
 ```
 cd build
 ```
-```
 mkdir css js
 ```
 then change back to the root directory of your project.
@@ -55,3 +54,5 @@ When you deploy the site you do not need to upload the Gruntfile,  package.json 
 If you are using an exact clone of this repo make sure update your `index.html` and any other pages to `build/css/main.min.css` and remove all other styles. Do the same with the javascript file links. Change to `build/js/scripts.min.js`. Also, rename the default exported custom css file to `main.css`.
 
 Check out my [YouTube video tutorial] (https://www.youtube.com/watch?v=nKVIU-yhaP4) to help you use this system 👍 Happy coding 🎉
+
+Feel free to [buy me a coffee] (http://ko-fi.com/A5643LYE) to help me spend more time developing and launching sweet tools like this ☕️🙏
