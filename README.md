@@ -17,18 +17,21 @@ then `cd` into a chosen directory and run
 git clone https://github.com/kierglover/webflow-build-system.git
 ```
 You should then have the `package.json` and the `Gruntfile.js` in your chosen directory.
+
 ### Running the System
 To make sure all the npm dependencies are installed, run the following in your projects root directory (`
-/documents/mywebsite/` for example).
+/documents/mywebsite/) for example.
 ```
 npm install
 ```
 Then test by running the default Grunt task which has been set up to run a custom Watch task
 ```
 grunt
+```
 
 ### Finishing Touches
-Now you can go ahead and export your Webflow site, unzip it and copy the contents to the directory in which you cloned this Build System. Add the following empty folders
+Now you can go ahead and export your Webflow site, unzip it and copy the contents to the directory in which you cloned this Build System. Add the following empty folders.
+
 ```
 mkdir build
 ```
@@ -37,7 +40,6 @@ then change directory
 cd build
 ```
 mkdir css js
-```
 ```
 then change back to the root directory of your project.
 ```
