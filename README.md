@@ -51,3 +51,5 @@ Make a small change or addition in your stylesheet and Grunt will watch for chan
 When you deploy the site you do not need to upload the Gruntfile,  package.json file or node_modules directory.
 
 If you are using an exact clone of this repo make sure update your `index.html` and any other pages to `build/css/main.min.css` and remove all other styles. Do the same with the javascript file links. Change to `build/js/scripts.min.js`. Also, rename the default exported custom css file to `main.css`.
+
+Check out my [YouTube video tutorial] (https://www.youtube.com/watch?v=nKVIU-yhaP4) to help you use this system 👍 Happy coding 🎉

@@ -1,4 +1,3 @@
-
 module.exports = function(grunt) {
 
     grunt.initConfig({
@@ -32,7 +31,7 @@ module.exports = function(grunt) {
      uglify: {
           my_target: {
                files: {
-                    'build/scripts.min.js': ['build/js/scripts.js']
+                    'build/js/scripts.min.js': ['build/js/scripts.js']
                }
           }
      },
