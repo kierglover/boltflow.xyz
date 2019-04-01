@@ -7,8 +7,8 @@
     "test": "test"
   },
   "repository": {
-   "type": "git",
-   "url": "git+https://github.com/kierglover/webflow-build-system.git"
+    "type": "git",
+    "url": "git+https://github.com/kierglover/webflow-build-system.git"
   },
   "author": "Kieran Glover",
   "license": "MIT",

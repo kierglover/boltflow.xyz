@@ -1,5 +1,5 @@
 # Webflow Build System 💨 🖥
-A simple Grunt build system to speed up websites you exported with [Webflow](https://webflow.com?rfsn=881395.47d94f).
+A simple Grunt build system to speed up websites you exported with [Webflow](http://bit.ly/2I4QBFc).
 ## Getting Started
 This a simple, but scalable build system template that is easy to use especially if you've ever used Grunt before. Even if you have't, hopefully through these instructions you can utilise the system.
 ### Prerequisites
@@ -23,27 +23,15 @@ To make sure all the npm dependencies are installed, run the following in your p
 ```
 npm install
 ```
-Then test by running the default Grunt task which has been set up to run a custom Watch task.
+Then test by running the default Grunt task which has been set up to run a custom Watch task. This will look for any changes you CSS and JS files and keep the build files updated.
 
 ```
 grunt
 ```
 
 ### Finishing Touches
-Now you can go ahead and export your Webflow site, unzip it and copy the contents to the directory in which you cloned this Build System. Add the following empty folders.
+Now you can go ahead and export your Webflow site, unzip it and copy the contents to the directory in which you cloned this Build System.
 
-```
-mkdir build
-```
-then change directory
-```
-cd build
-mkdir css js
-```
-then change back to the root directory of your project.
-```
-cd ../
-```
 Then you can run the default grunt command
 ```
 grunt
@@ -57,4 +45,4 @@ If you are using an exact clone of this repo make sure update your `index.html` 
 
 Check out my [YouTube video tutorial](https://www.youtube.com/watch?v=nKVIU-yhaP4) to help you use this system 👍 Happy coding 🎉
 
-Feel free to [buy me a coffee](http://ko-fi.com/A5643LYE) to help me spend more time developing and launching sweet tools like this ☕️🙏
+Feel free to [donate](https://paypal.me/kierangloverpay?locale.x=en_GB) to help me spend more time developing and launching sweet tools like this ☕️🙏

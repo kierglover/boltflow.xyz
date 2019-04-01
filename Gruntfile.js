@@ -13,17 +13,17 @@ module.exports = function(grunt) {
             }
         }
    },
-     // CONCAT JS //
+     // COMBINES JS //
      concat: {
           js: {
-               src: ['js/modernizr.js', 'js/webflow.js'],
-               dest: 'build/js/scripts.js',
+               src: ['js/webflow.js'],
+               dest: 'assets/js/scripts.js',
                },
 
-          // CONCATS MAIN CSS AND BOOTSTRAP MIN CSS //
+          // COMBINES CSS FILES //
           css: {
                src: ['css/main.css', 'css/normalize.css', 'css/webflow.css'],
-               dest: 'build/css/main.css',
+               dest: 'assets/css/main.css',
                },
      },
 
@@ -36,13 +36,12 @@ module.exports = function(grunt) {
           }
      },
 
-        // PIPES MAIN CSS TO DIST AND MINIFIES //
-        cssmin: {
+        // SENDS MAIN CSS TO BUILD CSS AND MINIFIES, REMOVES UNUSED CLASSES ETC //
+        cssnano: {
             dist: {
-                files: [
-                    {src: 'build/css/main.css',
-                    dest: 'build/css/main.min.css'}
-                ]
+                files: {
+                    'assets/css/main.css': 'build/css/main.min.css'
+                }
             }
 
         },
@@ -57,7 +56,7 @@ module.exports = function(grunt) {
 });
     grunt.loadNpmTasks('grunt-php');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-cssnano');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.registerTask('default', ['watch']);
