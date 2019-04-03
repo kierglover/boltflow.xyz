@@ -31,7 +31,7 @@ module.exports = function(grunt) {
      uglify: {
           my_target: {
                files: {
-                    'build/js/scripts.min.js': ['build/js/scripts.js']
+                    'build/js/scripts.min.js': ['assets/js/scripts.js']
                }
           }
      },
@@ -40,7 +40,7 @@ module.exports = function(grunt) {
         cssnano: {
             dist: {
                 files: {
-                    'assets/css/main.css': 'build/css/main.min.css'
+                    'build/css/main.min.css': 'assets/css/main.css'
                 }
             }
 
@@ -49,7 +49,7 @@ module.exports = function(grunt) {
         watch: {
             js: {
                 files: ['js/**/*.js', 'css/**/*.css'],
-                tasks: ['concat:js', 'concat:css', 'uglify', 'cssmin'],
+                tasks: ['concat:js', 'concat:css', 'uglify', 'cssnano'],
             },
         },
 
