@@ -1,4 +1,4 @@
-# Boltflow.xzy 💨 🖥
+# [Boltflow.xzy](http://boltflow.xyz) 💨 🖥
 Make your static [Webflow](http://bit.ly/2I4QBFc) site even more awesome in just a few minutes.
 ## About this project.
 Webflow is a powerful website creation tool that has many great performance boosting features and tips, however when exporting sites to host externally we have the chance to further improve performance. However, setting up a new environment and writing optimization scripts can be time consuming, especially when your site is ready to launch.
@@ -54,7 +54,7 @@ Simply rename the default css file to `main.css` and watch our system do it's ma
 ```
 
 ### Final Notes
-Just make sure to remove css/normalize.css css/webflow.css and css/<your-project-name.webflow.css> and, like our CSS, remove the js/webflow.js link and any other js files included (i.e js/<your-project-name.webflow.js>. 
+Just make sure to remove `css/normalize.css` `css/webflow.css` and `css/<your-project-name.webflow.css>` and, like our CSS, remove the `js/webflow.js` link and any other js files included (i.e `js/<your-project-name.webflow.js`>. 
 
 If you are using an exact clone of this repo make sure update your `index.html` and any other pages to `build/css/main.min.css`. Do the same with the javascript file links. Change to `build/js/scripts.min.js`.
 
