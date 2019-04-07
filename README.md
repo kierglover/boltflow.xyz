@@ -1,47 +1,64 @@
-# Webflow Build System 💨 🖥
-A simple Grunt build system to speed up websites you exported with [Webflow](http://bit.ly/2I4QBFc).
-## Getting Started
-This a simple, but scalable build system template that is easy to use especially if you've ever used Grunt before. Even if you have't, hopefully through these instructions you can utilise the system.
-### Prerequisites
+# Boltflow.xzy 💨 🖥
+Make your static [Webflow](http://bit.ly/2I4QBFc) site even more awesome in just a few minutes.
+## About this project.
+Webflow is a powerful website creation tool that has many great performance boosting features and tips, however when exporting sites to host externally we have the chance to further improve performance. However, setting up a new environment and writing optimization scripts can be time consuming, especially when your site is ready to launch.
+
+With boltflow.xyz you can be be ready to deploy with a few basic commands in your terminal. Your site will be neatly packaged, optimized and ready to deploy anywhere you want.
+### Let's get started.
 There are  a couple things you will need to make sure Grunt runs correctly. Firstly make sure you have [Node](https://nodejs.org/en/) installed. Then test NPM is installed by typing the following in your terminal.
 ```
 npm -v
 ```
-### Set Up
-To get the build system up and running, test to see if git is installed by running the following in your terminal
-```
-git --version
-```
-then `cd` into a chosen directory and run
+Then, export your Webflow site code, unzip it and copy the contents of this Github repository to the Webflow website directory you just unzipped. 
+
+To get the repo type the following command.
 ```
 git clone https://github.com/kierglover/webflow-build-system.git
 ```
-You should then have the `package.json` and the `Gruntfile.js` in your chosen directory.
 
-### Running the System
-To make sure all the npm dependencies are installed, run the following in your projects root directory (/documents/mywebsite/) for example.
+### Up and Running
+To get things up and running simply navigate to your website directory using the terminal or command line and install the dependancies with the following.
 ```
 npm install
 ```
-Then test by running the default Grunt task which has been set up to run a custom Watch task. This will look for any changes you CSS and JS files and keep the build files updated.
+Then once everything is installed, run the following command.
 
 ```
 grunt
 ```
 
 ### Finishing Touches
-Now you can go ahead and export your Webflow site, unzip it and copy the contents to the directory in which you cloned this Build System.
+Simply rename the default css file to `main.css` and watch our system do it's magic! Our website structure will automagically look a little something like this depending on how many pages you have etc. 
 
-Then you can run the default grunt command
 ```
-grunt
+.
+├── assets
+│   └── css
+│   	└── main.css
+│   └── js
+│   	└── scripts.js
+├── build
+│   └── css
+│   	└── main.min.css
+│   └── js
+│   	└── scripts.min.js
+├── css
+│   └── main.css
+│   └── normalize.css
+│   └── webflow.css
+├── images
+│   └── ...
+├── js
+│   └── webflow.js
+├── index.html
 ```
-Make a small change or addition in your stylesheet and Grunt will watch for changes and run the pre-prepared tasks.
 
 ### Final Notes
-When you deploy the site you do not need to upload the Gruntfile,  package.json file or node_modules directory.
+Just make sure to remove css/normalize.css css/webflow.css and css/<your-project-name.webflow.css> and, like our CSS, remove the js/webflow.js link and any other js files included (i.e js/<your-project-name.webflow.js>. 
 
-If you are using an exact clone of this repo make sure update your `index.html` and any other pages to `build/css/main.min.css` and remove all other styles. Do the same with the javascript file links. Change to `build/js/scripts.min.js`. Also, rename the default exported custom css file to `main.css`.
+If you are using an exact clone of this repo make sure update your `index.html` and any other pages to `build/css/main.min.css`. Do the same with the javascript file links. Change to `build/js/scripts.min.js`.
+
+### Support Me
 
 Check out my [YouTube video tutorial](https://www.youtube.com/watch?v=nKVIU-yhaP4) to help you use this system 👍 Happy coding 🎉
 
