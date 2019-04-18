@@ -2,8 +2,9 @@
   "name": "boltflow",
   "version": "1.5.0",
   "description": "A simple Grunt build system to optimise sites exported with Webflow.",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
+    "start": "electron .",
     "boltflow": "grunt boltflow"
   },
   "repository": {
@@ -21,10 +22,12 @@
     "grunt-cssnano": "^2.1.0"
   },
   "devDependencies": {
+    "electron": "^4.1.4",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-cssmin": "^2.1.0",
     "grunt-contrib-uglify": "^2.3.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-php": "^1.5.1"
+    "grunt-php": "^1.5.1",
+    "grunt-serve": "^0.1.6"
   }
 }

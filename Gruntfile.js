@@ -3,16 +3,11 @@ module.exports = function(grunt) {
     grunt.initConfig({
 
 //SIMPLE PHP SERVER //
-     php: {
-          dist: {
-            options: {
-                port: 5000,
-                base:".",
-                open:true,
-                keepalive:true,
-            }
-        }
-   },
+serve: {
+    options: {
+        port: 9000,
+    }
+},
      // COMBINES JS //
      concat: {
           js: {
@@ -54,12 +49,13 @@ module.exports = function(grunt) {
         },
 
 });
-    grunt.loadNpmTasks('grunt-php');
+
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-cssnano');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-serve');
 
-    grunt.registerTask('boltflow', ['concat', 'uglify', 'cssnano']);
+    grunt.registerTask('boltflow', ['serve', 'concat', 'uglify', 'cssnano']);
     grunt.registerTask('default', ['watch']);
 };
