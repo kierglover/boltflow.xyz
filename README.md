@@ -28,7 +28,7 @@ grunt
 ```
 
 ### Finishing Touches
-Simply rename the default css file to `main.css` and watch our system do it's magic! Our website structure will automagically look a little something like this depending on how many pages you have etc. 
+Simply run the comman css file to `grunt boltflow` and watch our system do it's magic! Our website structure will automagically look a little something like this depending on how many pages you have etc. 
 
 ```
 .
