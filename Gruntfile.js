@@ -59,5 +59,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-cssnano');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
+
+    grunt.registerTask('boltflow', ['concat', 'uglify', 'cssnano']);
     grunt.registerTask('default', ['watch']);
 };
