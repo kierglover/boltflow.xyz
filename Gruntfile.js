@@ -16,13 +16,13 @@ module.exports = function(grunt) {
      // COMBINES JS //
      concat: {
           js: {
-               src: ['js/webflow.js'],
+               src: ['js/**/*.js'],
                dest: 'assets/js/scripts.js',
                },
 
           // COMBINES CSS FILES //
           css: {
-               src: ['css/main.css', 'css/normalize.css', 'css/webflow.css'],
+               src: ['css/**/*.css'],
                dest: 'assets/css/main.css',
                },
      },
@@ -31,7 +31,7 @@ module.exports = function(grunt) {
      uglify: {
           my_target: {
                files: {
-                    'build/js/scripts.min.js': ['assets/js/scripts.js']
+                    'build/js/scripts.min.js': ['assets/js/**/*.js']
                }
           }
      },
@@ -40,7 +40,7 @@ module.exports = function(grunt) {
         cssnano: {
             dist: {
                 files: {
-                    'build/css/main.min.css': 'assets/css/main.css'
+                    'build/css/main.min.css': 'assets/css/**/*.css'
                 }
             }
 
