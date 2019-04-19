@@ -4,8 +4,8 @@
   "description": "A simple Grunt build system to optimise sites exported with Webflow.",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
-    "boltflow": "grunt boltflow"
+    "dev": "electron .",
+    "boltflow": "electron . & grunt serve"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,7 @@
     "grunt-contrib-cssmin": "^2.1.0",
     "grunt-contrib-uglify": "^2.3.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-php": "^1.5.1",
-    "grunt-serve": "^0.1.6"
+    "grunt-serve": "^0.1.6",
+    "jquery": "^3.4.0"
   }
 }

@@ -5,18 +5,23 @@
     <title>Boltflow Test</title>
   </head>
   <body>
-    <h1>Boltflow test</h1>
+    <h1>Boltflow</h1>
     <!-- All of the Node.js APIs are available in this renderer process. -->
-    <p>
-      We are using Node.js <script>document.write(process.versions.node)</script>,
-      <br>Chromium <script>document.write(process.versions.chrome)</script>,
-      <br>and Electron <script>document.write(process.versions.electron)</script>.
-    </p>
+    <p>Make your static Webflow site even more awesome in just a few minutes.</p>
 
-    <a id="button-test" href="http://localhost:9000/task/boltflow" target="_">Run test</a>
+    <button id="start-button">Get Started</button>
+    <br>
+    <br>
+    <a id="button-test" href="http://localhost:8000/task/boltflow" target="_">Run test</a>
 
+    <script>window.$ = window.jQuery = require('jquery');</script>
     <script>
-      // You can also require other files to run in this process
+      $(function() {
+        console.log( "ready!" );
+        $("#start-button").click(function(){
+          $("#button-test").hide();
+        });
+      });
     </script>
   </body>
 </html>

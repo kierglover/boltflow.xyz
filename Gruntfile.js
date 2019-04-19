@@ -5,7 +5,7 @@ module.exports = function(grunt) {
 //SIMPLE PHP SERVER //
 serve: {
     options: {
-        port: 9000,
+        port: 8000,
     }
 },
      // COMBINES JS //
@@ -56,6 +56,6 @@ serve: {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-serve');
 
-    grunt.registerTask('boltflow', ['serve', 'concat', 'uglify', 'cssnano']);
+    grunt.registerTask('boltflow', ['concat', 'uglify', 'cssnano']);
     grunt.registerTask('default', ['watch']);
 };
