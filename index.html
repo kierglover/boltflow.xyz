@@ -2,26 +2,21 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Boltflow Test</title>
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
   </head>
   <body>
-    <h1>Boltflow</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    <p>Make your static Webflow site even more awesome in just a few minutes.</p>
-
-    <button id="start-button">Get Started</button>
-    <br>
-    <br>
-    <a id="button-test" href="http://localhost:8000/task/boltflow" target="_">Run test</a>
-
-    <script>window.$ = window.jQuery = require('jquery');</script>
-    <script>
-      $(function() {
-        console.log( "ready!" );
-        $("#start-button").click(function(){
-          $("#button-test").hide();
-        });
-      });
-    </script>
+    <section class="hero is-medium is-primary is-bold">
+      <div class="hero-body">
+          <div class="container">
+              <h1 class="title">Boltflow</h1>
+              <h2 class="subtitle">Make your static Webflow site even more awesome with just a click of a button.</p>
+              <br>
+              <br>
+              <a class="button is-danger" id="button-test" href="http://localhost:8000/task/boltflow" target="_">Optimize my site</a>
+          </div>
+      </div>
+    </section>
   </body>
 </html>
