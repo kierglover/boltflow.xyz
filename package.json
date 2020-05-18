@@ -25,6 +25,7 @@
     "bulma": "^0.7.4",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-cssmin": "^2.1.0",
+    "grunt-contrib-imagemin": "^4.0.0",
     "grunt-contrib-uglify": "^2.3.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-serve": "^0.1.6"
