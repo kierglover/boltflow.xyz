@@ -4,7 +4,9 @@
   "description": "A simple Grunt build system to optimise sites exported with Webflow.",
   "main": "main.js",
   "scripts": {
-    "dev": "grunt serve",
+    "install": "concurrently --kill-others \"npm run serve\" \"npm run start\"",
+    "serve": "grunt serve",
+    "start": "electron .",
     "boltflow": "grunt boltflow"
   },
   "repository": {
@@ -23,6 +25,8 @@
   },
   "devDependencies": {
     "bulma": "^0.7.4",
+    "electron": "^10.1.2",
+    "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-cssmin": "^2.1.0",
     "grunt-contrib-imagemin": "^4.0.0",
