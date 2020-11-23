@@ -4,7 +4,6 @@
   "description": "A simple Grunt build system to optimise sites exported with Webflow.",
   "main": "main.js",
   "scripts": {
-    "dev": "grunt serve",
     "boltflow": "grunt boltflow"
   },
   "repository": {
